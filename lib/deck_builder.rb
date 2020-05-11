@@ -13,6 +13,7 @@ class DeckBuilder
     end
 
     # Inputs deck manually into new_deck array
+    def build_deck
       @new_deck << Card.new("Spades", "A", 1)
       @new_deck << Card.new("Spades", "2", 2)
       @new_deck << Card.new("Spades", "3", 3)

@@ -77,7 +77,7 @@ class Runner
     @turn.pile_cards
     cards_won = @turn.spoils_of_war.size
     @turn.award_spoils(@winner)
-    puts "Turn #{@turn_number}: #{@winner} won #{cards_won} cards, #{@player1.deck.cards.size} , #{@player2.deck.cards.size}, #{cards_won} turn type #{@turn.type} , p1 rank #{ @player1.deck.rank_of_card_at(0)} , p2 rank #{ @player2.deck.rank_of_card_at(0)}"
+    puts "Turn #{@turn_number}: #{@winner} won #{cards_won} cards"
     if @player2.deck.cards.size == 0 && @player1.deck.cards.size >= 1
       puts "*~*~*~* #{@player1.name} has won the game! *~*~*~*"
       exit  # Ends Game
@@ -93,7 +93,7 @@ runner = Runner.new
 runner.start  #starts game
 runner.build_deck
 runner.deal_cards
- x = 0
+
 1000000.times do
   runner.turn
 end
