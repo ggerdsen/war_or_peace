@@ -94,6 +94,6 @@ runner.start  #starts game
 runner.build_deck
 runner.deal_cards
  x = 0
-50.times do
+1000000.times do
   runner.turn
 end
