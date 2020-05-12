@@ -174,7 +174,7 @@ class DeckTest < Minitest::Test
     @player1 = Player.new("Megan", @deck1)
     @player2 = Player.new("Aurora", @deck2)
     @turn = Turn.new(@player1, @player2)
-    # binding.pry
+    @turn.type
     assert_equal "No Winner", @turn.winner
   end
 

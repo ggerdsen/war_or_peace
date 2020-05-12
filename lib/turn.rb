@@ -37,7 +37,7 @@ class Turn
       end
     end
     if type == :mutually_assured_destruction
-      "No Winner"
+      win = "No Winner"
     end
     win
   end
